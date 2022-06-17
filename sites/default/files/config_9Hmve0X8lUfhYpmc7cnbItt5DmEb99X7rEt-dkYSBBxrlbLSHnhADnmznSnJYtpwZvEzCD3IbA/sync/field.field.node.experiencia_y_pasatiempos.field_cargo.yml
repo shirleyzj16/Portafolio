@@ -1,0 +1,19 @@
+uuid: f7cc27b1-a4ea-4cb9-8117-9c997449b712
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cargo
+    - node.type.experiencia_y_pasatiempos
+id: node.experiencia_y_pasatiempos.field_cargo
+field_name: field_cargo
+entity_type: node
+bundle: experiencia_y_pasatiempos
+label: Cargo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

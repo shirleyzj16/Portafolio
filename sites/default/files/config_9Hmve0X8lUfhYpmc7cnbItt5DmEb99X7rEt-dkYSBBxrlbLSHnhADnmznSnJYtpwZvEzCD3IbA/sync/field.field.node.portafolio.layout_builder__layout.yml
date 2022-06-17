@@ -1,0 +1,21 @@
+uuid: 448cec1b-da14-40b0-9f59-4f71e187f24d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.portafolio
+  module:
+    - layout_builder
+id: node.portafolio.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: portafolio
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

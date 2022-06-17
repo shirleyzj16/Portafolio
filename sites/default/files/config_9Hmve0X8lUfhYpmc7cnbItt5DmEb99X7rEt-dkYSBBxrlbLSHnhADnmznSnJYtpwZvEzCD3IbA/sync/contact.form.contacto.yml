@@ -1,0 +1,12 @@
+uuid: 5d616e19-af41-4506-a636-47a6263bf54e
+langcode: en
+status: true
+dependencies: {  }
+id: contacto
+label: Contacto
+recipients:
+  - persona@correo.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

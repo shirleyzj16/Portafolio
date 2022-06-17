@@ -1,0 +1,23 @@
+uuid: 8d5ac248-7a3a-4fe8-ad6c-87ed58b1dbf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.portafolio
+  module:
+    - text
+id: node.portafolio.body
+field_name: body
+entity_type: node
+bundle: portafolio
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

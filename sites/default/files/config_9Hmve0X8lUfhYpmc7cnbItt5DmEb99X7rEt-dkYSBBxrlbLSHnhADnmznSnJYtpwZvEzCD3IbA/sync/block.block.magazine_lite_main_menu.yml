@@ -1,0 +1,37 @@
+uuid: 86c52df3-11ac-4002-9e33-5e379dc876d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - node
+    - system
+  theme:
+    - magazine_lite
+_core:
+  default_config_hash: rQAinR5KuLdcZ_tyB1imjNm6Ha83yhTvKt8LXPoLw7w
+id: magazine_lite_main_menu
+theme: magazine_lite
+region: header
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      experiencia_y_pasatiempos: experiencia_y_pasatiempos
+      habilidades: habilidades
+      portafolio: portafolio

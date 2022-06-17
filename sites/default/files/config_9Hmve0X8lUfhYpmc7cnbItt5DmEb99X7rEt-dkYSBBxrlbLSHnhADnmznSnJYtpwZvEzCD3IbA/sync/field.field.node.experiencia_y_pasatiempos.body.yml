@@ -1,0 +1,23 @@
+uuid: 52f81e79-98d7-49a1-b5c2-ca696f67deda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.experiencia_y_pasatiempos
+  module:
+    - text
+id: node.experiencia_y_pasatiempos.body
+field_name: body
+entity_type: node
+bundle: experiencia_y_pasatiempos
+label: Responsabilidades
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

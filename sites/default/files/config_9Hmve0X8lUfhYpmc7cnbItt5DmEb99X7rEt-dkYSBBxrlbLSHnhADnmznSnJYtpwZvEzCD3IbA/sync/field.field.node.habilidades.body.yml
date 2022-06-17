@@ -1,0 +1,23 @@
+uuid: 4a6ef5bd-e06c-4ce3-a1e5-200c4cf00cfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.habilidades
+  module:
+    - text
+id: node.habilidades.body
+field_name: body
+entity_type: node
+bundle: habilidades
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

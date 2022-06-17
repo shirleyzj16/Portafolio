@@ -1,0 +1,18 @@
+uuid: 4a9b9795-deb0-4a1a-ab26-f85c3072fd67
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Experiencia y Pasatiempos'
+type: experiencia_y_pasatiempos
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

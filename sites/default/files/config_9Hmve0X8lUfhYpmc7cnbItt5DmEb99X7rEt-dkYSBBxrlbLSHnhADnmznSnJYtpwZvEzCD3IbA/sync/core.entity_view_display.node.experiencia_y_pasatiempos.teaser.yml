@@ -1,0 +1,42 @@
+uuid: 096e8a93-acf8-4319-85ce-2157fd3ba541
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.experiencia_y_pasatiempos.body
+    - field.field.node.experiencia_y_pasatiempos.field_cargo
+    - field.field.node.experiencia_y_pasatiempos.field_fecha
+    - field.field.node.experiencia_y_pasatiempos.field_lugar
+    - field.field.node.experiencia_y_pasatiempos.field_video
+    - field.field.node.experiencia_y_pasatiempos.field_visual
+    - field.field.node.experiencia_y_pasatiempos.layout_builder__layout
+    - node.type.experiencia_y_pasatiempos
+  module:
+    - text
+    - user
+id: node.experiencia_y_pasatiempos.teaser
+targetEntityType: node
+bundle: experiencia_y_pasatiempos
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_cargo: true
+  field_fecha: true
+  field_lugar: true
+  field_video: true
+  field_visual: true
+  layout_builder__layout: true

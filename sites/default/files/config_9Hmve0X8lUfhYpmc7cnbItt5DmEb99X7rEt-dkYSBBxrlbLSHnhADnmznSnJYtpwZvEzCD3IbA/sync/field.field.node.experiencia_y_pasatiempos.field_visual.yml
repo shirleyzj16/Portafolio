@@ -1,0 +1,29 @@
+uuid: b4b29ed0-fb9a-42c8-9360-d1c979a0856f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visual
+    - media.type.image
+    - node.type.experiencia_y_pasatiempos
+id: node.experiencia_y_pasatiempos.field_visual
+field_name: field_visual
+entity_type: node
+bundle: experiencia_y_pasatiempos
+label: visual
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

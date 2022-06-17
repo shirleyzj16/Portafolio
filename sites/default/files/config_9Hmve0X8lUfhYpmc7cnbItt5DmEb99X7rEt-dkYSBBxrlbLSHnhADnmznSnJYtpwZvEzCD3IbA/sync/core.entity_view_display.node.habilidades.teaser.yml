@@ -1,0 +1,28 @@
+uuid: f4696d0e-eda1-4bf0-ac47-73a24171e3d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.habilidades.body
+    - field.field.node.habilidades.field_imagen
+    - field.field.node.habilidades.field_resume
+    - field.field.node.habilidades.layout_builder__layout
+    - node.type.habilidades
+  module:
+    - user
+id: node.habilidades.teaser
+targetEntityType: node
+bundle: habilidades
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_imagen: true
+  field_resume: true
+  layout_builder__layout: true

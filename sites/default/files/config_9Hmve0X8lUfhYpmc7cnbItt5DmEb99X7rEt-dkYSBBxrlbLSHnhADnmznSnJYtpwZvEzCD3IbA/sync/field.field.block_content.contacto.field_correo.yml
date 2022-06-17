@@ -1,0 +1,19 @@
+uuid: b633de2e-492e-440f-9df6-2e4ca02e1fc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contacto
+    - field.storage.block_content.field_correo
+id: block_content.contacto.field_correo
+field_name: field_correo
+entity_type: block_content
+bundle: contacto
+label: correo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

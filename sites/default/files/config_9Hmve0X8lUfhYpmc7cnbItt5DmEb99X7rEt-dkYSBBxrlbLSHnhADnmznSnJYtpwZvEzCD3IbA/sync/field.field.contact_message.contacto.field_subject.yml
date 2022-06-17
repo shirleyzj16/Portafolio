@@ -1,0 +1,19 @@
+uuid: 83b92b3b-c867-4604-8b47-caabca2569c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contacto
+    - field.storage.contact_message.field_subject
+id: contact_message.contacto.field_subject
+field_name: field_subject
+entity_type: contact_message
+bundle: contacto
+label: Subject
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

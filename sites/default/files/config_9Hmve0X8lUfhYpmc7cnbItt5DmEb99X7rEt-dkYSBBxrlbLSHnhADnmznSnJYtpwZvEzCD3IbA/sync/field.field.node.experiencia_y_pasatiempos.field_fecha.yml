@@ -1,0 +1,24 @@
+uuid: 20b7a490-7224-4d64-bfd9-164f8cdd48ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha
+    - node.type.experiencia_y_pasatiempos
+  module:
+    - datetime
+id: node.experiencia_y_pasatiempos.field_fecha
+field_name: field_fecha
+entity_type: node
+bundle: experiencia_y_pasatiempos
+label: Fecha
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

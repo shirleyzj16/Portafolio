@@ -1,0 +1,200 @@
+uuid: ed8af8da-7149-4d54-99c3-81ab20bde1ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.experiencia_y_pasatiempos.body
+    - field.field.node.experiencia_y_pasatiempos.field_cargo
+    - field.field.node.experiencia_y_pasatiempos.field_fecha
+    - field.field.node.experiencia_y_pasatiempos.field_lugar
+    - field.field.node.experiencia_y_pasatiempos.field_video
+    - field.field.node.experiencia_y_pasatiempos.field_visual
+    - field.field.node.experiencia_y_pasatiempos.layout_builder__layout
+    - node.type.experiencia_y_pasatiempos
+  module:
+    - datetime
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          abbf3c8d-5be9-47c7-849c-097095616c9c:
+            uuid: abbf3c8d-5be9-47c7-849c-097095616c9c
+            region: content
+            configuration:
+              id: 'extra_field_block:node:experiencia_y_pasatiempos:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          6ff88650-0723-4f88-ba8b-7fc347c7dd38:
+            uuid: 6ff88650-0723-4f88-ba8b-7fc347c7dd38
+            region: content
+            configuration:
+              id: 'field_block:node:experiencia_y_pasatiempos:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          f0a84363-a2e1-4d98-ad4e-ef4fd738cf14:
+            uuid: f0a84363-a2e1-4d98-ad4e-ef4fd738cf14
+            region: content
+            configuration:
+              id: 'field_block:node:experiencia_y_pasatiempos:field_cargo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          9d152cc5-33c2-477f-97eb-24a125170be5:
+            uuid: 9d152cc5-33c2-477f-97eb-24a125170be5
+            region: content
+            configuration:
+              id: 'field_block:node:experiencia_y_pasatiempos:field_lugar'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          7adf9679-1d7f-4aa8-a374-f55ba884d5fb:
+            uuid: 7adf9679-1d7f-4aa8-a374-f55ba884d5fb
+            region: content
+            configuration:
+              id: 'field_block:node:experiencia_y_pasatiempos:field_visual'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          34b9cabd-bb62-467c-843b-48270becb397:
+            uuid: 34b9cabd-bb62-467c-843b-48270becb397
+            region: content
+            configuration:
+              id: 'field_block:node:experiencia_y_pasatiempos:field_fecha'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          b00be2fc-98b1-4ba2-b10c-e7caa3310845:
+            uuid: b00be2fc-98b1-4ba2-b10c-e7caa3310845
+            region: content
+            configuration:
+              id: 'field_block:node:experiencia_y_pasatiempos:field_video'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+id: node.experiencia_y_pasatiempos.default
+targetEntityType: node
+bundle: experiencia_y_pasatiempos
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_cargo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_fecha:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_lugar:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_video:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_visual:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  layout_builder__layout: true

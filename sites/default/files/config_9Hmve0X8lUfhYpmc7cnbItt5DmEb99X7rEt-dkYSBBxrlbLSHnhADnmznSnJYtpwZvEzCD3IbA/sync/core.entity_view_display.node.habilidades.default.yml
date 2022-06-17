@@ -1,0 +1,124 @@
+uuid: 760d3a1c-7f15-4191-9e45-78a53fbf2774
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.habilidades.body
+    - field.field.node.habilidades.field_imagen
+    - field.field.node.habilidades.field_resume
+    - node.type.habilidades
+  module:
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          10d77513-fcaa-469a-95b5-b5425b8e2c61:
+            uuid: 10d77513-fcaa-469a-95b5-b5425b8e2c61
+            region: content
+            configuration:
+              id: 'extra_field_block:node:habilidades:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          332f76dc-cb23-4060-a72e-05e22632f048:
+            uuid: 332f76dc-cb23-4060-a72e-05e22632f048
+            region: content
+            configuration:
+              id: 'field_block:node:habilidades:field_imagen'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          cadc6e84-47e4-466a-a59e-b66754660816:
+            uuid: cadc6e84-47e4-466a-a59e-b66754660816
+            region: content
+            configuration:
+              id: 'field_block:node:habilidades:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          fb141ca2-f149-48f9-9d41-1969dff68e31:
+            uuid: fb141ca2-f149-48f9-9d41-1969dff68e31
+            region: content
+            configuration:
+              id: 'field_block:node:habilidades:field_resume'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.habilidades.default
+targetEntityType: node
+bundle: habilidades
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_resume:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

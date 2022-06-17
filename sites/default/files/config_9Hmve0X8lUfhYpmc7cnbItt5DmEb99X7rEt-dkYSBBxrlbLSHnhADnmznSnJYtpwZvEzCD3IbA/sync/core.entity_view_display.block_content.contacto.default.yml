@@ -1,0 +1,45 @@
+uuid: 0757b231-b18f-42e0-bb93-73406ee77836
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contacto
+    - field.field.block_content.contacto.field_correo
+    - field.field.block_content.contacto.field_linkedin_profile
+    - field.field.block_content.contacto.field_telfono
+  module:
+    - link
+id: block_content.contacto.default
+targetEntityType: block_content
+bundle: contacto
+mode: default
+content:
+  field_correo:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_linkedin_profile:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_telfono:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  addtoany: true

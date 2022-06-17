@@ -1,0 +1,23 @@
+uuid: 7f14b708-8bcb-4a8b-bd98-7efb85007934
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contacto
+    - field.storage.block_content.field_linkedin_profile
+  module:
+    - link
+id: block_content.contacto.field_linkedin_profile
+field_name: field_linkedin_profile
+entity_type: block_content
+bundle: contacto
+label: 'Linkedin Profile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link
